@@ -65,7 +65,8 @@ tpm_path() {
 		echo >&2 "FATAL: Tmux Plugin Manager not configured in tmux.conf"
 		_fatal_error_abort
 	fi
-	echo "$_CACHED_TPM_PATH"
+	# echo "$_CACHED_TPM_PATH"
+  echo "/home/admin/.tmux/plugins/"
 }
 
 tpm_plugins_list_helper() {
